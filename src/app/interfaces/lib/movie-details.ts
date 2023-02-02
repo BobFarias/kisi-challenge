@@ -13,3 +13,5 @@ export interface IDetailedMovieList {
   writers: string;
   imdbid: string;
 }
+
+export type IPageMovies = Record<number, IDetailedMovieList[]>;
