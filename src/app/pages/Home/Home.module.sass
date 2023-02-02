@@ -1,0 +1,152 @@
+@import "./../../global"
+    
+.body_container_home_page
+    background-color: #191919
+    width: 100vw
+    height: 100vh
+    overflow: auto
+    display: flex
+    align-items: center
+    flex-direction: column
+    padding: 100px 0px
+
+.container_grids_home_page
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: flex-start
+
+.main_container_first_grid
+    gap: 21px
+    display: flex
+    margin-bottom: 20px
+    align-items: flex-end
+
+.main_container_first_grid_title
+    gap: 0
+    width: 404px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+.main_container_second_grid
+    display: flex
+    gap: 18px
+    margin-bottom: 20px
+
+.main_container_second_grid_next_page
+    flex-direction: column
+    gap: 0px
+
+.container_secondary_grid
+    display: flex
+    gap: 18px
+    height: 354px
+    width: 530px
+    flex-wrap: wrap
+    justify-content: flex-end
+
+.container_grid
+    display: flex
+    overflow: hidden
+    position: relative
+    align-items: baseline
+    justify-content: center
+    cursor: pointer
+    transition: 0.3s
+    border-radius: 10px
+
+    &:hover
+        background-color: $kisi_connect_blue
+
+        img
+            opacity: 0
+
+        .container_details
+            display: inline
+
+    img
+        width: 100%
+        opacity: 0.3
+
+.container_details
+    top: 5%
+    width: 80%
+    left: 15px
+    color: white
+    font-size: 16px
+    font-weight: 400
+    position: absolute
+    display: none
+
+    p:first-of-type
+        font-size: 16px
+
+    p:last-of-type
+        font-size: 12px
+    
+.first_type_grid
+    width: 404px
+    height: 259px
+
+.second_type_grid
+    width: 549px
+    height: 392px
+
+.third_type_grid
+    width: 312px
+    height: 168px
+
+.forth_type_grid
+    width: 200px
+    height: 168px
+
+.fifth_type_grid
+    width: 317px
+    height: 168px
+
+.sixth_type_grid
+    width: 420px
+    height: 356px
+
+.seventh_type_grid
+    width: 309px
+    height: 220px
+
+.title_grid
+    font-size: 32px
+    color: white
+    font-weight: 100
+
+.button_next_page
+    height: 34px
+    width: 98px
+    border-radius: 25px
+    padding: 8px 20px 5px 20px
+    background-color: $kisi_connect_blue
+    color: white
+    font-size: 14px
+    border: 0
+    cursor: pointer
+    transition: 0.5s
+    margin-top: 20px
+
+    &:hover
+        color: $kisi_connect_blue
+        background: white
+
+
+@media screen and (max-width: 600px)
+    .main_container_first_grid, .main_container_second_grid, .container_secondary_grid
+        width: 90%
+        height: 100%
+        margin: 20px
+        flex-wrap: nowrap
+        flex-direction: column
+    
+    .first_type_grid, .second_type_grid, .third_type_grid, .forth_type_grid, .fifth_type_grid, .sixth_type_grid, .seventh_type_grid
+        width: 100%
+        height: 500px
+
+
+
