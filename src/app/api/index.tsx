@@ -3,7 +3,7 @@ import axios, { Method } from "axios";
 import { IDetailedMovieList } from "../interfaces";
 
 // Main function to call the API
-async function callApi(
+export async function callApi(
   method: Method,
   endpoint: string,
   data?: object,
